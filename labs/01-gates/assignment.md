@@ -1,4 +1,4 @@
-# Lab 1: JAN GROSS
+# Lab 1: JAN GROSS 230067
 
 ### De Morgan's laws
 
