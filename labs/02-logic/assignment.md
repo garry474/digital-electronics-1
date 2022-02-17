@@ -5,22 +5,26 @@
 1. Karnaugh maps for other two functions:
 
    Greater than:
+   
+   <img src="https://github.com/garry474/digital-electronics-1/blob/main/labs/02-logic/Images/K_map_greater.png" width=20% height=20%>
 
-   ![K-maps](images/kmap_empty.png)
 
    Less than:
+   
+   <img src="https://github.com/garry474/digital-electronics-1/blob/main/labs/02-logic/Images/K_map_less.png" width=20% height=20%>
 
-   ![K-maps](images/kmap_empty.png)
 
 2. Equations of simplified SoP (Sum of the Products) form of the "greater than" function and simplified PoS (Product of the Sums) form of the "less than" function.
 
-   ![Logic functions](images/comparator_min.png)
+   <img src="https://github.com/garry474/digital-electronics-1/blob/main/labs/02-logic/Images/Geater_SoP.png" width=30% height=30%>
+   <img src="https://github.com/garry474/digital-electronics-1/blob/main/labs/02-logic/Images/Less_PoS.png" width=30% height=30%>
+   
 
 ### 4-bit comparator
 
 1. Listing of VHDL stimulus process from testbench file (`testbench.vhd`) with at least one assert (use BCD codes of your student ID digits as input combinations). Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
-   Last two digits of my student ID: **xxxx??**
+   Last two digits of my student ID: **xxxx67**
 
 ```vhdl
     p_stimulus : process
@@ -47,7 +51,7 @@
 
 2. Text console screenshot during your simulation, including reports.
 
-   ![your figure]()
+   ![your figure](https://github.com/garry474/digital-electronics-1/blob/main/labs/02-logic/Images/codereport.png)
 
 3. Link to your public EDA Playground example:
 
