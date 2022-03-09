@@ -27,6 +27,7 @@ architecture testbench of tb_hex_7seg is
     -- Local signals
     signal s_hex  : std_logic_vector(4 - 1 downto 0);
     signal s_seg  : std_logic_vector(7 - 1 downto 0);
+   
 
 begin
     -- Connecting testbench signals with decoder entity
@@ -34,7 +35,8 @@ begin
     uut_hex_7seg : entity work.hex_7seg
         port map(
             hex_i => s_hex,
-            seg_o => s_seg
+            seg_o => s_seg,
+            bcd_o => s_bcd
         );
 
     --------------------------------------------------------
