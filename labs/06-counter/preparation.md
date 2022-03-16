@@ -14,7 +14,7 @@ The Nexys A7 board provides five push buttons for user applications.
    ![clock period](images/freq1.png)
    &nbsp;
 
-   ![number of periods](images/periods1.png)
+   ![number of periods](images/period1.png)
    &nbsp;
    <!--
    https://editor.codecogs.com/
