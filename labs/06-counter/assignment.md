@@ -1,15 +1,10 @@
-# Lab 6: YOUR_FIRSTNAME LASTNAME
+# Lab 6: JAN GROSS 230067
 
 ### Bidirectional counter
 
 1. Listing of VHDL code of the completed process `p_cnt_up_down`. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
 ```vhdl
-    --------------------------------------------------------
-    -- p_cnt_up_down:
-    -- Clocked process with synchronous reset which implements
-    -- n-bit up/down counter.
-    --------------------------------------------------------
     p_cnt_up_down : process(clk)
     begin
         if rising_edge(clk) then
@@ -18,18 +13,21 @@
                 s_cnt_local <= (others => '0'); -- Clear all bits
 
             elsif (en_i = '1') then -- Test if counter is enabled
-
-                -- TEST COUNTER DIRECTION HERE
-
-                    s_cnt_local <= s_cnt_local + 1;
+                if (cnt_up_i = '1') then                    -- count  up
+                    s_cnt_local <= s_cnt_local + 1; 
+                                      
+                elsif (cnt_up_i = '0') then                 -- count  down
+                    s_cnt_local <= s_cnt_local - 1;
+                end if;
             end if;
         end if;
-    end process p_cnt_up_down;
+    end process p_cnt_up_down
+
 ```
 
 2. Screenshot with simulated time waveforms. Test reset as well. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![your figure]()
+   ![your figure](https://github.com/garry474/digital-electronics-1/blob/main/labs/06-counter/images/graph1.png)
 
 ### Two counters
 
